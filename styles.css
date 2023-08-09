@@ -1,0 +1,278 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: #151515;
+  color: #fefefe;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Merriweather", serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li:hover {
+  position: relative;
+  top: 5px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Merriweather", serif;
+}
+
+/* Hero section styles */
+.hero {
+  background: #151515;
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 0;
+  color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+.hero img {
+  max-width: 80vw;
+  margin: 20px 0 20px 0;
+}
+
+/* Room section styles */
+#Home,
+#About,
+#Galeri,
+#Programs,
+#Join,
+#Contact {
+  scroll-margin-top: 70px; /* Adjust this value based on your navbar height */
+}
+
+#About,
+#Programs {
+  font-family: "Poppins", sans-serif;
+  margin-top: -10px;
+}
+
+#Programs,
+#Join {
+  background-color: #151515;
+  color: #fefefe;
+  margin: -10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.kotak {
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.kotak-kecil {
+  width: 50%;
+  border-left: 2px solid #151515;
+  border-right: 2px solid #151515;
+  padding: 0 10px 0 10px;
+}
+
+.kotak li {
+  margin-top: 5px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  background-color: #f3eeee;
+  padding: 1rem;
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card img {
+  width: 370px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-card:hover {
+  background-color: #9e9c9c;
+  color: #fff;
+}
+
+/* Footer styles */
+footer {
+  background-color: #fefefe;
+  color: #151515;
+  text-align: center;
+  height: 100vh;
+}
+
+.footer-content {
+  display: flex;
+  height: 80vh;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  margin-bottom: 30px;
+}
+
+.footer-title h2 {
+  font-size: 3rem;
+}
+
+.footer-link ul {
+  list-style: none;
+}
+
+.footer-link li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-link a {
+  color: #151515;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.footer-link a:hover {
+  position: relative;
+  top: 10px;
+}
+
+.footer-link i {
+  font-size: 1.2rem;
+}
+
+.created {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0 0 0;
+  height: 10vh;
+  border-top: 4px solid #000000;
+}
+
+svg {
+  margin-top: -5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    margin: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo h1 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    margin-top: 5px;
+  }
+
+  .nav-links li {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+
+  .kotak {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .kotak-kecil {
+    width: 90vw;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #151515;
+    border-bottom: 1px solid #151515;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+  }
+
+  .project-card {
+    width: 300px;
+  }
+
+  .project-card img {
+    width: 290px;
+  }
+}
