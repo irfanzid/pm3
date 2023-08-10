@@ -275,4 +275,8 @@ svg {
   .project-card img {
     width: 290px;
   }
+
+  .footer {
+    font-size: 1rem;
+  }
 }
